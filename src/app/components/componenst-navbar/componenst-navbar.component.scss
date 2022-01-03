@@ -1,0 +1,33 @@
+.navbar {
+  height: 65px;
+  width: 100%;
+  background-color: #090b13;
+  position: fixed;
+  top: -65px;
+  left: 0;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+  box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  &.navbar {
+    top: 0;
+  }
+
+  #logo {
+    width: 80px;
+    margin: 20px 35px;
+  }
+  #button {
+    padding: 14px 17px;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #fa1660, #ff6e00);
+    float: right;
+    margin: 10px 155px;
+  }
+}

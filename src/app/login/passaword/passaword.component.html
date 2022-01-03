@@ -1,0 +1,31 @@
+<div class="body" [formGroup]="cadastroForm" (ngSubmit)="submitForm()">
+  <div class="header">
+    <div class="img">
+      <img id="image" src="../../assets/logo-original.svg" alt="" />
+    </div>
+    <div class="infos">
+      <h1 class="email">Digite a senha</h1>
+      <input
+        id="input"
+        formControlName="senha"
+        type="password"
+        placeholder="Digite sua senha"
+      />
+      <button
+        id="button"
+        [disabled]="cadastroForm.invalid"
+        [routerLink]="['/browse/start']"
+      >
+        Continuar
+      </button>
+      <p
+        class="span"
+        style="cursor: pointer"
+        [routerLink]="['/login/password/enter-passcode']"
+      >
+        Esqueceu a senha?
+      </p>
+    </div>
+  </div>
+  <app-rodape-plus id="rodape"></app-rodape-plus>
+</div>

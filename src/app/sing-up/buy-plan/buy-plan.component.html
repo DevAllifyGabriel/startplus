@@ -1,0 +1,33 @@
+<div class="body" [formGroup]="cadastroForm" (ngSubmit)="submitForm()">
+  <div class="header">
+    <div class="img">
+      <img id="image" src="../../../assets/scale.png" alt="" />
+    </div>
+    <div class="infos">
+      <h5 class="phases">passo 2 de 3</h5>
+      <h1 class="email">Crie uma senha</h1>
+      <input
+        id="input"
+        formControlName="senha"
+        type="password"
+        placeholder="Senha"
+      />
+      <h5 class="description">
+        Use no mínimo seis caracteres (com distinção entre maiúsculas e
+        minúsculas) com pelo menos um número ou caractere especial.
+      </h5>
+      <div class="info">
+        <p class="info-description">Você vai usar este e-mail para entrar</p>
+        <h1 class="info-email">seuemail@gmail.com</h1>
+      </div>
+      <button
+        id="button"
+        [routerLink]="['/sing-up/finalizing-purchase']"
+        [disabled]="cadastroForm.invalid"
+      >
+        Continuar
+      </button>
+    </div>
+  </div>
+  <app-rodape-plus id="rodape"></app-rodape-plus>
+</div>

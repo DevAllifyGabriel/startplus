@@ -1,0 +1,41 @@
+<div class="body" [formGroup]="cadastroForm" (ngSubmit)="submitForm()">
+  <div class="header">
+    <div class="img">
+      <img id="image" src="../../assets/logo-original.svg" alt="" />
+    </div>
+    <div class="infos">
+      <h1 class="email">Use seu e-mail para entrar</h1>
+
+      <input
+        id="input"
+        type="text"
+        formControlName="email"
+        placeholder="E-mail"
+      />
+      <p
+        class="p-invalid"
+        *ngIf="
+          cadastroForm.get('email')?.errors &&
+          cadastroForm.get('email')?.touched &&
+          cadastroForm.get('email')?.dirty
+        "
+      >
+        Houve um problema na criação da conta. Volte a digitar seu e-mail e
+        senha e tente novamente. Se o problema continuar, entre em contato com o
+        Suporte do Star+ (código de erro 6).
+      </p>
+      <button
+        id="button"
+        [routerLink]="['/login/password']"
+        [disabled]="cadastroForm.invalid"
+      >
+        Continuar
+      </button>
+      <p class="span">
+        <span disabled>Não tem Star+? </span
+        ><span [routerLink]="['/sing-up']" class="span-assine">Assine</span>
+      </p>
+    </div>
+  </div>
+  <app-rodape-plus id="rodape"></app-rodape-plus>
+</div>

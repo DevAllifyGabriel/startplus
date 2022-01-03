@@ -1,0 +1,73 @@
+<div class="body" [formGroup]="cadastroForm" (ngSubmit)="submitForm()">
+  <div class="button-rigth">
+    <button
+      class="button"
+      [routerLink]="['/login']"
+      routerLinkActive="router-link-active"
+    >
+      Entrar
+    </button>
+  </div>
+  <div class="header">
+    <div class="img">
+      <img id="image" src="../../assets/scale.png" alt="" />
+    </div>
+    <div class="infos">
+      <h5 class="phases">passo 1 de 3</h5>
+      <h1 class="email">Digite seu e-mail</h1>
+      <h5 class="info">
+        <p>Já tem um codigo do Disney+? Use o mesmo e-mail</p>
+        <p>para facilitar o login e o pagamento.</p>
+      </h5>
+      <input
+        id="input"
+        formControlName="email"
+        type="email"
+        placeholder="E-mail"
+      />
+      <p
+        class="p-invalid"
+        *ngIf="
+          cadastroForm.get('email')?.errors &&
+          cadastroForm.get('email')?.touched &&
+          cadastroForm.get('email')?.dirty
+        "
+      >
+        Houve um problema na criação da conta. Volte a digitar seu e-mail e
+        senha e tente novamente. Se o problema continuar, entre em contato com o
+        Suporte do Star+ (código de erro 6).
+      </p>
+      <div class="checkbox">
+        <div class="input">
+          <input id="allify" type="checkbox" />
+        </div>
+
+        <div class="title">
+          <p id="title">
+            Sim! Quero receber notícias, ofertas especiais e outras informações
+            do Star+ e das empresas do grupo Walt Disney.
+          </p>
+        </div>
+      </div>
+      <div class="ponto">
+        <p class="title">
+          A Disney usará os seus dados para oferecer e dar suporte aos serviços,
+          personalizar e melhorar a sua experiência no Star+ e para enviar
+          informações relacionadas ao serviço. Você pode alterar as preferências
+          de comunicação quando quiser. Podemos usar esses dados conforme
+          explica a nossa , inclusive compartilhá-los com as Empresas do grupo
+          Walt Disney. Ao clicar em "Continuar", você confirma que leu a nossa
+          informações relacionadas ao serviço. Você pode alterar as preferências
+        </p>
+        <button
+          id="button"
+          [disabled]="cadastroForm.invalid"
+          [routerLink]="['/sing-up/create-password']"
+        >
+          Continuar
+        </button>
+      </div>
+    </div>
+  </div>
+  <app-rodape-plus id="rodape"></app-rodape-plus>
+</div>

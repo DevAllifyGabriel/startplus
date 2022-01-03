@@ -1,0 +1,35 @@
+footer {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  .rodape-logo {
+    text-align: center;
+    #logo {
+      width: 80px;
+    }
+  }
+  .infos-rdoape {
+    padding-top: 40px;
+    width: 70%;
+    text-align: center;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(7, 1fr);
+    color: #cacaca;
+    & p {
+      font-size: 12px;
+    }
+    #select {
+      background: none;
+      color: #cacaca;
+      border: 1px solid #cacaca;
+      border-radius: 5px;
+      margin-top: -5px;
+    }
+  }
+  .title {
+    text-align: center;
+    margin-top: 25px;
+    color: #cacaca;
+    font-size: 12px;
+  }
+}

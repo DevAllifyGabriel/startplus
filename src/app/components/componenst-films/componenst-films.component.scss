@@ -1,0 +1,11 @@
+.main-films-grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 20vh;
+  margin: 10px 0px 125px 0px;
+  .film {
+    #image-main {
+      width: 400px;
+    }
+  }
+}

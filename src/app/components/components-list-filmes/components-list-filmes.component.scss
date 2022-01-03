@@ -1,0 +1,73 @@
+.header {
+  .putz {
+    margin: 150px 0 0 80px;
+    font-size: 60px;
+    font-weight: 100;
+    width: 200px;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.4s ease-in;
+      z-index: 9;
+      display: block;
+    }
+  }
+  .main {
+    margin: 50px 50px;
+    .grid-filmes {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+      .image {
+        margin-top: 40px;
+        &:hover {
+          transform: scale(1.2);
+          transition: all 0.4s ease-in;
+          z-index: 9;
+        }
+        #image {
+          width: 100%;
+          height: 150px;
+          border-radius: 5px 5px 0px 0px;
+          background-size: cover;
+        }
+        .text {
+          text-align: left;
+          display: block;
+          background: #07080e;
+          color: #fff;
+          width: 100%;
+          height: fit-content;
+          padding: 5px;
+          box-sizing: border-box;
+          border-radius: 0 0 7px 7px;
+          margin-top: -5px;
+          cursor: pointer;
+          & h4 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #fff;
+            margin: 5px 5px 5px 5px;
+          }
+          & p {
+            margin: 5px 5px 5px 5px;
+            font-size: 14px;
+            color: #cacaca;
+            margin-top: 15px;
+          }
+          .open {
+            text-align: none;
+            .icons {
+              width: 100%;
+              display: grid;
+              grid-template-columns: 30px 30px 30px 30px;
+              margin: 20px 5px 5px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

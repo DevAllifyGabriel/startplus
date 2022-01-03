@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
+.body {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  color: #fff;
+  background: #090b13;
+  font-family: "Roboto", sans-serif;
+  .header {
+    margin: 0 auto;
+    width: 370px;
+    padding-bottom: 50px;
+    .img {
+      padding-top: 20px;
+      #image {
+        width: 350px;
+      }
+    }
+    .infos {
+      margin-top: 100px;
+      .phases {
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 1px;
+        color: #cacaca;
+      }
+      .email {
+        font-size: 22px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-family: "Roboto", sans-serif;
+        margin-top: 5px;
+      }
+      .info {
+        font-weight: 400;
+        line-height: 22px;
+        margin-top: 10px;
+        font-size: 12px;
+        color: #cacaca;
+        opacity: 1;
+      }
+    }
+    .icons {
+      border-bottom: 1px solid #cacaca;
+      .icons-grid {
+        text-align: center;
+        margin: 30px 5px 0px 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .card-credito {
+          margin-bottom: 7px;
+          &:hover {
+            border-bottom: 2px solid #cacaca;
+          }
+          .title-credito {
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: 400;
+            color: #cacaca;
+            margin-bottom: 5px;
+          }
+        }
+        .pay-pal {
+          margin-bottom: 7px;
+          &:hover {
+            border-bottom: 2px solid #cacaca;
+          }
+          .title-pay-pal {
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: 400;
+            color: #cacaca;
+            margin-bottom: 5px;
+          }
+        }
+        .mercado-pago {
+          margin-bottom: 7px;
+          &:hover {
+            border-bottom: 2px solid #cacaca;
+          }
+          .title-mercado-pago {
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: 400;
+            color: #cacaca;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+    .inputs {
+      .input-dad {
+        margin-top: 16px;
+        color: #cacaca;
+        .input {
+          width: 100%;
+          .title {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+            margin-left: 2px;
+          }
+          .input {
+            width: 100%;
+            height: 55px;
+            border: 5px;
+            outline: none;
+            background-color: rgb(49, 52, 62);
+            border-radius: 5px;
+            font-size: 14px;
+            color: #cacaca;
+            &::placeholder {
+              padding-left: 12px;
+              font-size: 15px;
+            }
+            &:focus {
+              border: 1px solid #cacaca;
+            }
+          }
+        }
+      }
+      .input-dad {
+        margin-top: 16px;
+        color: #cacaca;
+        .input-grids {
+          width: 100%;
+          margin-top: 5px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 10px;
+          margin-top: 15px;
+          .title {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+            margin-left: 2px;
+          }
+          .input {
+            width: 100%;
+            height: 55px;
+            border: 5px;
+            outline: none;
+            background-color: rgb(49, 52, 62);
+            border-radius: 5px;
+            font-size: 14px;
+            color: #cacaca;
+            &::placeholder {
+              padding-left: 12px;
+              font-size: 15px;
+            }
+            &:focus {
+              border: 1px solid #cacaca;
+            }
+          }
+        }
+      }
+    }
+    .title {
+      .p-invalid {
+        margin-top: 0.45rem;
+        font-size: 12px;
+        color: #ff554c;
+        line-height: 16px;
+        opacity: 1;
+      }
+      .title {
+        font-weight: 400;
+        line-height: 18px;
+        margin-top: 20px;
+        font-size: 12px;
+        color: #cacaca;
+        opacity: 1;
+      }
+      #button {
+        margin-top: 15px;
+        width: 100%;
+        height: 50px;
+        background: linear-gradient(90deg, #fa1660, #ff6e00);
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+}

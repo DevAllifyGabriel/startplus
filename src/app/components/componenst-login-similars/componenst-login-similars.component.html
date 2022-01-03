@@ -1,0 +1,19 @@
+<div class="body">
+  <div class="header">
+    <div class="img">
+      <ng-content></ng-content>
+    </div>
+    <div class="infos">
+      <h1 class="email">{{ email }}</h1>
+      <input id="input" type="text" placeholder="'placeholder'" />
+      <button id="button" [routerLink]="['/passaword']">{{ button }}</button>
+      <p class="span">
+        <span disabled>{{ span }}</span
+        ><span [routerLink]="['/sing-up']" class="span-assine">{{
+          spanDois
+        }}</span>
+      </p>
+    </div>
+  </div>
+  <app-rodape-plus id="rodape"></app-rodape-plus>
+</div>

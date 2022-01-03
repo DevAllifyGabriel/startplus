@@ -1,0 +1,12 @@
+.channels-grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 45px;
+  margin-top: 40px;
+  .channels-dad {
+    text-align: center;
+    #channels {
+      width: 170px;
+    }
+  }
+}

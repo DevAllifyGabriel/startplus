@@ -1,0 +1,218 @@
+<app-componenst-navbar
+  id="navbar"
+  [activeMenu]="activeMenu"
+></app-componenst-navbar>
+
+<div class="body">
+  <div class="top">
+    <div class="test">
+      <button id="button" [routerLink]="['/login']" style="cursor: pointer">
+        Entrar
+      </button>
+    </div>
+  </div>
+  <div class="top-center">
+    <img id="logo" src="../../assets/original-logo.png" alt="" />
+    <div class="top-message">
+      <h3>
+        <p>Só o Combo+ oferece Disney+ e Star+ juntos para você ter</p>
+
+        <p>acesso ilimitado a filmes, séries de sucesso e esportes ao vivo</p>
+        <p>com a ESPN, para ver onde e como quiser.</p>
+      </h3>
+    </div>
+
+    <button id="top-button" [routerLink]="['/sing-up']" style="cursor: pointer">
+      quero assinar
+    </button>
+    <div class="top-links">
+      <a href=""><p class="top-one">Assinar somente o Disney+</p></a>
+      <a href=""><p class="top-two">Assinar somente o Star+</p></a>
+    </div>
+  </div>
+  <div class="main">
+    <div class="main-highlights-title">
+      <h1 class="title">O que você vai ver primeiro?</h1>
+      <h4 class="subtitle">
+        Estreias de filmes, clássicos e sagas, suas séries favoritas e
+        lançamentos exclusivos, comédias animadas, produções originais e
+        esportes ao vivo com a ESPN.
+      </h4>
+      <div class="main-highlights">
+        <img id="image" src="../../assets/original.jpeg" alt="" />
+      </div>
+    </div>
+    <div class="main-channels">
+      <div class="logo-main">
+        <img id="image-espn" src="../../assets/original-start.png" alt="" />
+        <h4 class="subtitle">
+          Os melhores torneios do mundo ao vivo, séries originais, programas e
+          jogos exclusivos.
+        </h4>
+      </div>
+      <div class="channels-grids">
+        <app-componenst-channels>
+          <img id="channels" src="../../assets/original-laliga.png" alt="" />
+        </app-componenst-channels>
+        <app-componenst-channels>
+          <img id="channels" src="../../assets/original-baisebol.png" alt="" />
+        </app-componenst-channels>
+        <app-componenst-channels>
+          <img id="channels" src="../../assets/original-nfl.png" alt="" />
+        </app-componenst-channels>
+        <app-componenst-channels>
+          <img id="channels" src="../../assets/original-motocop.png" alt="" />
+        </app-componenst-channels>
+        <app-componenst-channels>
+          <img
+            id="channels"
+            src="../../assets/original-libertadores.png"
+            alt=""
+          />
+        </app-componenst-channels>
+        <app-componenst-channels>
+          <img id="channels" src="../../assets/original-east.png" alt="" />
+        </app-componenst-channels>
+        <app-componenst-channels>
+          <img id="channels" src="../../assets/original-afa.png" alt="" />
+        </app-componenst-channels>
+        <app-componenst-channels>
+          <img id="channels" src="../../assets/original-nba.png" alt="" />
+        </app-componenst-channels>
+      </div>
+    </div>
+    <div class="main-films">
+      <div class="main-films-title">
+        <h1 class="title">Histórias que você só encontra no Disney+</h1>
+        <h4 class="subtitle">
+          Descubra as melhores histórias da Disney, Pixar, Marvel, Star Wars e
+          National Geographic.
+        </h4>
+      </div>
+      <div class="main-films-grids">
+        <app-componenst-films>
+          <img id="image" src="../../assets/original (1).jpeg" alt="" />
+        </app-componenst-films>
+        <app-componenst-films>
+          <img id="image" src="../../assets/original (2).png" alt="" />
+        </app-componenst-films>
+        <app-componenst-films>
+          <img id="image" src="../../assets/original (3).jpeg" alt="" />
+        </app-componenst-films>
+        <app-componenst-films>
+          <img id="image" src="../../assets/original (4).jpeg" alt="" />
+        </app-componenst-films>
+        <app-componenst-films>
+          <img id="image" src="../../assets/original(5).png" alt="" />
+        </app-componenst-films>
+        <app-componenst-films>
+          <img id="image" src="../../assets/original (6).jpeg" alt="" />
+        </app-componenst-films>
+      </div>
+    </div>
+    <div class="main-promotion">
+      <div class="main-promation-title">
+        <h1 class="title">Escolha seu plano</h1>
+      </div>
+      <app-componenst-plans></app-componenst-plans>
+      <p class="main-promotion-rodape">
+        *O preço pode variar caso a assinatura seja feita através de outras
+        plataformas.
+      </p>
+    </div>
+    <div class="watch-on-any-device">
+      <div class="watch-on-any-device-title">
+        <h1 class="title">Assista em seus dispositivos favoritos</h1>
+      </div>
+      <div class="watch-on-any-device-grids">
+        <app-componenst-channels>
+          <img
+            id="watch-on-any-device-image"
+            src="../../assets/original-tv.png"
+            alt=""
+          />
+        </app-componenst-channels>
+        <app-componenst-channels>
+          <img
+            id="watch-on-any-device-image"
+            src="../../assets/original-computer.png"
+            alt=""
+          />
+        </app-componenst-channels>
+        <app-componenst-channels>
+          <img
+            id="watch-on-any-device-image"
+            src="../../assets/original-celular.png"
+            alt=""
+          />
+        </app-componenst-channels>
+        <app-componenst-channels>
+          <img
+            id="watch-on-any-device-image"
+            src="../../assets/original-video-game.png"
+            alt=""
+          />
+        </app-componenst-channels>
+      </div>
+    </div>
+    <div class="rodape-you-doubt">
+      <div class="rodape-title">
+        <h1 class="title">Perguntas Frequentes</h1>
+      </div>
+      <div class="rodape-you-doubt-grids">
+        <app-componenst-you-doubt
+          [title]="'Já tem o Disney+ ou a Star+ e quer o Combo+?'"
+          [subtitle]="'Ao assinar o Combo+:'"
+          [paragraph]="
+            '- O valor da sua assinatura existente (anual ou mensal) será descontado do preço do Combo+.'
+          "
+          [paragraphSecond]="
+            '- Se você assina o plano mensal, o valor que você paga mensalmente será descontado do preço do Combo+.'
+          "
+          [paragraphThird]="
+            '- Se você assina o plano anual, dividiremos o valor que você já pagou em 12 vezes e descontaremos esse valor do preço do Combo+ mensalmente.'
+          "
+          [paragraphDedroom]="
+            '- Você vai receber um e-mail com os valores detalhados assim que finalizar o pagamento.'
+          "
+          [paragraphFifth]="
+            '- Lembre-se que você pode cancelar a assinatura quando quiser. No momento, apenas a assinatura mensal do Combo+ está disponível.'
+          "
+        ></app-componenst-you-doubt>
+        <app-componenst-you-doubt
+          [subtitle]="
+            'Assine o Star+ usando o mesmo login e senha do Disney+, assim você terá acesso a ambos os serviços por um preço promocional. Para ser um assinante você deve ter 18 anos.
+            '
+          "
+          [title]="'Já e Assiante do Disney+?'"
+        ></app-componenst-you-doubt>
+        <app-componenst-you-doubt
+          [title]="'Em quanto dispositivos posso assisitir ao mesmo tempo'"
+          [subtitle]="'Star+ oferece:'"
+          [paragraph]="'- Uma experiência premium'"
+          [paragraphSecond]="
+            '- Eventos esportivos ao vivo com máxima qualidade'
+          "
+          [paragraphThird]="
+            '- A possibilidade de assistir em até 4 telas ao mesmo tempo sem custo adicional'
+          "
+          [paragraphDedroom]="'- Títulos em 4K UHD e HDR'"
+          [paragraphFifth]="'- Downloads em até 10 dispositivos'"
+        ></app-componenst-you-doubt>
+        <app-componenst-you-doubt
+          [title]="'Posso Baixa?'"
+          [subtitle]="
+            'Você pode utilizar: cartão de débito, crédito, PayPal, Mercado Pago e também aplicativos de terceiros: App Store da Apple e Google Play da Google.'
+          "
+        ></app-componenst-you-doubt>
+        <app-componenst-you-doubt
+          [title]="'Que formas de pagamento usar?'"
+          [subtitle]="
+            'Sim. Com o controle parental do Star+, você poderá controlar o acesso a conteúdos de acordo com a classificação indicativa selecionada, oferecendo maior segurança aos usuários da sua família.'
+          "
+        ></app-componenst-you-doubt>
+      </div>
+    </div>
+  </div>
+  <app-rodape-plus></app-rodape-plus>
+</div>

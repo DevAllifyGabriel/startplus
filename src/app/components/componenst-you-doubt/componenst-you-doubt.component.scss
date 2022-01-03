@@ -1,0 +1,57 @@
+.rodapeYouDoubt {
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  height: 13vh;
+  background: #35313f;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 5fr 80px;
+  transition: 0;
+  .rodape-you-doubt-title {
+    .title {
+      color: #fff;
+      font-weight: 500;
+      font-size: 20px;
+      margin: 25px 20px;
+    }
+  }
+  .rodape-you-doubt-icon {
+    text-align: center;
+    margin-top: 25px;
+  }
+}
+
+.rodapeYouDoubtShow {
+  margin-top: 15px;
+  width: 100%;
+  height: 45vh;
+  background: #35313f;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 5fr 80px;
+  .rodape-you-doubt-title {
+    .title {
+      color: #fff;
+      font-weight: 500;
+      font-size: 20px;
+      margin: 25px 20px;
+    }
+    .subtitle {
+      color: #cacaca;
+      font-weight: 500;
+      font-size: 20px;
+      margin: 5px 20px;
+    }
+    .paragrafh {
+      color: #cacaca;
+      font-weight: 500;
+      font-size: 18px;
+      margin: 5px 20px;
+    }
+  }
+  .rodape-you-doubt-icon {
+    text-align: center;
+    margin-top: 25px;
+  }
+}
